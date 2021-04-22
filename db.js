@@ -1,7 +1,7 @@
 
 var mongoose = require('mongoose');
 //Set up default mongoose connection
-var mongoDB = "mongodb://starhub-cu.herokuapp.com/starhub-db";
+var mongoDB = "mongodb://localhost/starhub-db";
 mongoose.connect(mongoDB, { useNewUrlParser: true });
  //Get the default connection
 var db = mongoose.connection;
