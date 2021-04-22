@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Table - Starhub</title>
+    <meta name="description" content="Code repository for the modern web">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0">
+                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>Starhub</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                       <li class="nav-item" role="presentation"><a class="nav-link" href="/dashboard"><i class="fas fa-table"></i><span>DashBoard</span></a></li>
+                 <li class="nav-item" role="presentation"><a class="nav-link" href="/profile"><i class="fas fa-user"></i><span>Profile</span></a></li>
+                 
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/logout"><i class="far fa-user-circle"></i><span>Logout</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="card" style="width: 45%;">
+           
+           <center>
+            <div class="card-body">
+            <form class="user"  action="/repo" method="POST">
+                                <div class="form-group"><input class="form-control form-control-user" type="text" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Name" name="name"></div>
+                                <input class="form-control form-control-user" type="hidden" value="{{email}}" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Name" name="email">
+                                </div><button class="btn btn-primary btn-block text-white btn-user" type="submit">Create Repository</button>
+                            </form>
+                            
+            </div>
+            </center>
+        </div>
+      
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Starhub 2021</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+   
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
