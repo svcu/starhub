@@ -1,7 +1,7 @@
 
 var mongoose = require('mongoose');
 //Set up default mongoose connection
-var mongoDB = process.env.MONGODB_URI;
+var mongoDB = "mongodb://starhub-cu.herokuapp.com/db";
 mongoose.connect(mongoDB, { useNewUrlParser: true });
  //Get the default connection
 var db = mongoose.connection;
