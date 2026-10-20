@@ -21,7 +21,14 @@ var userSchema = new Schema({
          description: String,
          education: String, 
          interests: String,
-         learning: String
+         learning: String,
+         teams: [{
+             id: String
+         }],
+         teamRequests:[{
+             id: String,
+             state: {type: String, default:"yet"}
+         }]
 });
 
 userSchema.methods.encrypt = async(password)=>{
